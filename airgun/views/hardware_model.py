@@ -16,7 +16,7 @@ class DeleteHardwareModelDialog(ConfirmationDialog):
 
 class HardwareModelsView(BaseLoggedInView, SearchableViewMixinPF4):
     delete_dialog = DeleteHardwareModelDialog()
-    title = Text("//h1[normalize-space(.)='Hardware Models']")
+    title = Text("//h1[normalize-space(.)='Hardware models']")
     new = Text("//a[contains(@href, '/models/new')]")
     table = SatTable(
         './/table',
